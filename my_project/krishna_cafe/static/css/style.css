@@ -1,0 +1,70 @@
+h1 {
+    background-color: aquamarine;
+    color: blue;
+    text-align: center;  
+}
+h2{
+    background-color: aquamarine ;
+    color:blue;
+    padding:20px auto;
+    text-align: center;
+}
+.menu_button{
+    display: block;
+    margin: 0 auto;
+    background-color: blue;
+    display: flex;
+    color: aliceblue;
+    padding : 10px auto; 
+}
+.logo {
+    width: 100px; 
+    height: 100;
+    display: block;
+    margin: 0 auto;
+    
+}
+.menu-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap :20px;
+    padding:20px;
+}
+.menu-item{
+    width:200px;
+    border: 1px solid green;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.item-img{
+    border: 1px;
+    width:150px;
+    height:100px;
+    object-fit: cover;   /* image crop karke fit karega */
+    border-radius: 10px;
+}
+.ADC-button{
+    background-color: green;
+    color: aliceblue;
+}
+.Go-To-cart-button{
+    display: block;
+    margin:0 auto;
+    flex-wrap: wrap;
+    background-color: blue;
+    color:aliceblue;
+
+}
+.place-order{
+    display: block;
+    margin: 20px auto;
+    background-color: green;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}

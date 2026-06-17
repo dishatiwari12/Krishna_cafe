@@ -1,0 +1,28 @@
+{% load static %}
+
+<html>
+    <head>
+        <title>krishna's Menu</title>
+        <link rel ='stylesheet' href= "{% static 'css/style.css'%}">
+    </head>
+    <body>
+        <h1>Taste the Best at Krishna Cafe</h1>
+        <div class="menu-container">
+        {% for item in items %}
+        <div class ='menu-item'>
+                <img src="{{ item.image.url }}" class='item-img' >
+                <h2>{{item.name}}</h2>
+                 <p>{{item.desciption}}</p>
+                 <p>{{item.price}}Rs.</p>
+                 <button onclick="addToCart('{{item.name}}','{{item.price}}')"class=ADC-button>Add TO Cart</button>
+        </div>
+
+        {% endfor %}
+        </div>
+        <a href="{% url 'cart' %}">
+        <button class= Go-To-cart-button> GO TO Cart</button>
+        </a>
+
+    <script src="{% static 'js/script.js'%}"> </script>
+    </body>
+</html>

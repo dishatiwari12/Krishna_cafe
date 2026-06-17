@@ -1,0 +1,22 @@
+{% load static%}
+
+<html>
+    <head>
+    <title>krishna's cart page</title>
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    </head>
+</html>
+
+<body>
+    <h1> YOUR CART </h1>
+    <h2> Your Bill </h2>
+    <div id = "cart-items">
+
+    </div>
+
+    <div id="total-bill"></div><br><br>
+
+    <button class="place-order" onclick = "checkout()">Place Order</button>
+
+    <script src="{% static 'js/script.js'%}"></script>
+</body>

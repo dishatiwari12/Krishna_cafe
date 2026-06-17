@@ -1,0 +1,17 @@
+{% load static %}
+<html>
+    <head>
+        <title>krishna cafe</title>
+        <link rel='stylesheet' href="{% static 'css/style.css'%}">
+    </head>
+    <body>
+        <h1>Welcome To Krishna</h1>
+        <img  class= "logo" src="{% static 'images/krishna.jpg'%}" alt="logo" >
+        <h2> About Us</h2>
+        <p> Welcome to Krishna Cafe, where delicious food and warm hospitality come together. We serve fresh and tasty dishes made with quality ingredients to give our customers a memorable dining experience. Whether you are looking for a quick snack, a refreshing drink, or a satisfying meal, Krishna Cafe offers a variety of options to suit every taste. Our goal is to provide great food and excellent service in a comfortable and friendly atmosphere.
+</p>
+<a href="{% url 'menu'%}">
+<button class= "menu_button">MENU</button>
+</a>
+    </body>
+</html>
